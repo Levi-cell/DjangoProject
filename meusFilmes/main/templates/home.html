@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
@@ -18,16 +20,44 @@
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
 </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Filmes Favoritos</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        /* Estilos CSS para o título grande */
+        .titulo-grande {
+            font-size: 36px; /* Tamanho da fonte */
+            font-weight: bold; /* Negrito */
+            text-align: center; /* Alinhamento do texto */
+            margin-bottom: 20px; /* Espaçamento inferior */
+        }
+
+    </style>
+</head>
+<style>
+    .frase-verde {
+        color: green;
+    }
+</style>
 <body>
+
 <div class = "card text-center">
     <div class="card-header">
-        Filmes
+
+         <h1 class="titulo-grande frase-verde">Meus Filmes Favoritos</h1>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </div>
 {% for each in Filmes %}
-    <div class="card-body">
-<h2> {{each.filme}}</h2>
-<p> {{each.descricao}}</p>
+    <div class="card-body frase-verde">
+<h2>  {{each.filme}}</h2>
+        <p> {{each.descricao}}</p>
+        <img src="{{ each.imagem.url }}">
+        <br><br>
+        <p>&#10004 &#10004 &#10004 &#10004</p>
         <a href="#" class = "btn btn-primary">Conluído</a>
+
 </div>
 {% endfor %}
 </div>

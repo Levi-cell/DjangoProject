@@ -6,6 +6,7 @@ from django.db import models
 class ProjetoDjango(models.Model):
     filme = models.CharField(max_length=50)
     descricao = models.TextField()
+    imagem = models.ImageField(upload_to='banner', default='default.png')
 
     def __str__(self):
         return self.filme

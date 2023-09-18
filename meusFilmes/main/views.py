@@ -12,7 +12,6 @@ def homepage(request):
 
     )
 
-
 def formulario(request):
     submibutton = request.POST.get("submit")
 

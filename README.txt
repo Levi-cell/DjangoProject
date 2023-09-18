@@ -45,3 +45,5 @@ CURIOSIDADE DO TÓPICO ANTERIOR
 
 1 - filme = pd.objects.get(pk=1)
 2 - print(filme)
+
+Caso queira conhecer melhor: https://vimeo.com/865760796/d1dac92a56
