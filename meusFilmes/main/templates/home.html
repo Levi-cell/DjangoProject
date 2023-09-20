@@ -41,6 +41,7 @@
         color: gold;
     }
 </style>
+
 <body>
 
 <div class = "card text-center">
@@ -52,7 +53,7 @@
 {% for each in Filmes %}
     <div class="card-body frase-verde">
 <h2>  {{each.filme}}</h2>
-        <p> {{each.descricao}}</p>
+        <p style="font-size:24px;" > {{each.descricao}}</p>
         <img src="{{ each.imagem.url }}">
         <br><br>
         <p>&#10004 &#10004 &#10004 &#10004</p>

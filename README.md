@@ -46,4 +46,11 @@ CURIOSIDADE DO TÓPICO ANTERIOR
 1 - filme = pd.objects.get(pk=1)
 2 - print(filme)
 
+Caso queira usar o docker faça essas configurações do docker, no seu terminal faça os seguintes comandos:
+
+1 - docker build -t my-django-app:v1 .
+2 - docker run -d -p 8000:8000 my-django-app:v1
+
+Caso esteja usando windows baixe o aplicativo docker vá em images clique em my-django-app em seguida clique em Run e vá em optional settings e adicione 8000 em host port e depois clique em Run
+
 Caso queira conhecer melhor: https://vimeo.com/865760796/d1dac92a56
