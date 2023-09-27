@@ -1,6 +1,6 @@
 Caso comece o projeto do zero digite os seguintes comandos no terminal do seu diretório:
 
-1 - pip install djangopython manage.py runserver
+1 - pip install django / python manage.py runserver
 2 - django-admin startproject meusFilmes
 3 - cd meusFilmes
 4 - python manage.py startapp main
